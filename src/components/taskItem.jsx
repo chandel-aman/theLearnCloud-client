@@ -16,7 +16,7 @@ const TaskItem = ({ title, status, id, checked, index }) => {
 
   const handleCheckboxChange = async () => {
     try {
-      await fetch(`https://cute-puce-turkey-tux.cyclic.app/api/todos/${item.id}`, {
+      await fetch(`https://cute-puce-turkey-tux.cyclic.app/api/todos/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
