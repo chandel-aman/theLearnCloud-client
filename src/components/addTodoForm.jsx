@@ -20,7 +20,7 @@ const AddTodoForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/todos",
+        "https://cute-puce-turkey-tux.cyclic.app/api/todos",
         newTodo,
         {
           headers: {

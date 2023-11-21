@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/todos");
+        const response = await axios.get("https://cute-puce-turkey-tux.cyclic.app/api/todos");
         const todos = response.data;
         dispatch(setTodos(todos));
       } catch (error) {

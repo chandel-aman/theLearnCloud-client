@@ -59,7 +59,7 @@ const Dashboard = () => {
     if (item.status !== newStatus) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/todos/${item.id}`,
+          `https://cute-puce-turkey-tux.cyclic.app/api/todos/${item.id}`,
           {
             method: "PUT",
             headers: {
@@ -103,7 +103,7 @@ const Dashboard = () => {
           }));
 
           const response = await fetch(
-            `http://localhost:5000/api/todos/${item.id}`,
+            `https://cute-puce-turkey-tux.cyclic.app/api/todos/${item.id}`,
             {
               method: "PUT",
               headers: {
