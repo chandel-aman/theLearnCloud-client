@@ -8,7 +8,6 @@ import TaskItem from "../components/taskItem";
 const Dashboard = () => {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todos);
-  console.log(todos);
 
   const [pending, setPending] = useState(
     todos.filter((todo) => todo.status === "Pending")
